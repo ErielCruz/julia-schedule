@@ -55,6 +55,27 @@ function embedLatestYouTubeShorts() {
 document.addEventListener('DOMContentLoaded', () => {
   fetchScheduleMarkdown();
   embedLatestYouTubeShorts();
+  initCustomVideoPlayer();
   // Set current year in footer
   document.getElementById('current-year').textContent = new Date().getFullYear();
 });
+
+// Custom video player functionality
+function initCustomVideoPlayer() {
+  const overlay = document.getElementById('videoOverlay');
+  const video = document.getElementById('lulVideo');
+  
+  overlay.addEventListener('click', () => {
+    // Hide the overlay
+    overlay.style.display = 'none';
+    // Show and play the video
+    video.style.display = 'block';
+    video.play();
+  });
+  
+  // Optional: Reset to overlay when video ends
+  video.addEventListener('ended', () => {
+    video.style.display = 'none';
+    overlay.style.display = 'flex';
+  });
+}
