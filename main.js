@@ -69,13 +69,13 @@ async function embedLatestYouTubeShorts() {
     // Show loading state
     container.innerHTML = '<div class="loading">Loading latest videos...</div>';
     
-    // Fetch YouTube shorts from external file
-    const response = await fetch('youtube-shorts.json');
+    // Fetch YouTube shorts from simple text file
+    const response = await fetch('youtube-shorts.txt');
     if (!response.ok) {
       throw new Error(`Failed to load YouTube shorts: ${response.status}`);
     }
-    const data = await response.json();
-    const shortIds = data.latest_shorts; // Now it's directly an array of IDs
+    const text = await response.text();
+    const shortIds = text.trim().split('\n').filter(id => id.trim() !== '');
     
     const embedsHtml = shortIds.map(id => `
       <div style="display: flex; flex-direction: column; align-items: center;">
