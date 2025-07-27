@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await embedLatestYouTubeShorts();
     initCustomVideoPlayer();
     initTimeCounter();
-    initDiggingGameLink();
+    // initDiggingGameLink(); // Disabled - using HTML onclick instead
     // Set current year in footer
     const yearElement = document.getElementById('current-year');
     if (yearElement) {
@@ -224,7 +224,7 @@ function initTimeCounter() {
 }
 
 // Initialize digging game link
-function initDiggingGameLink() {
+/* function initDiggingGameLink() {
   const peepoDig = document.querySelector('.peepo-dig-gif');
   
   if (!peepoDig) {
@@ -241,8 +241,8 @@ function initDiggingGameLink() {
     e.preventDefault();
     e.stopPropagation();
     
-    // Open the digging game in a new tab
-    window.open('digging-game.html', '_blank');
+    // Navigate to the digging game in the same tab
+    window.location.href = 'digging-game.html';
   });
   
   // Add hover effect
@@ -255,4 +255,4 @@ function initDiggingGameLink() {
     peepoDig.style.filter = '';
     peepoDig.style.transform = '';
   });
-}
+} */

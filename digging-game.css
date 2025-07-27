@@ -12,6 +12,22 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
+  min-height: 100vh;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 0.5rem;
+  }
+  
+  .game-header h1 {
+    font-size: 2rem;
+  }
+  
+  .game-header p {
+    font-size: 1rem;
+  }
 }
 
 .game-header {
@@ -57,6 +73,14 @@ body {
   flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .game-stats {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+}
+
 .stat {
   background: rgba(35, 35, 74, 0.6);
   padding: 1rem 1.5rem;
@@ -64,6 +88,30 @@ body {
   text-align: center;
   min-width: 120px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .stat {
+    padding: 0.5rem 0.75rem;
+    min-width: 80px;
+    flex: 1; /* Make stats take equal width */
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .stat-value {
+    font-size: 1.1rem;
+  }
+  
+  .double-power-indicator {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.25rem;
+  }
 }
 
 .stat-label {
@@ -127,6 +175,37 @@ body {
   }
 }
 
+.soil-particle {
+  position: absolute;
+  font-size: 1rem;
+  z-index: 90;
+  pointer-events: none;
+  animation: soilFloat 3s ease-out forwards;
+}
+
+@keyframes soilFloat {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translateY(-60px) scale(1.1) rotate(90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-120px) scale(1.2) rotate(180deg);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translateY(-180px) scale(1) rotate(270deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-250px) scale(0.8) rotate(360deg);
+    opacity: 0;
+  }
+}
+
 @keyframes slideIn {
   from { transform: translateX(100%); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
@@ -142,6 +221,14 @@ body {
   margin: 2rem auto;
   width: 400px;
   max-width: 90vw;
+}
+
+@media (max-width: 768px) {
+  .game-area {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 350px;
+  }
 }
 
 .ground-level {
@@ -220,6 +307,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px; /* Move button up by adding bottom margin */
 }
 
 .dig-button {
@@ -236,6 +324,13 @@ body {
   transition: all 0.2s ease;
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .dig-button {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .dig-button:hover {
@@ -292,10 +387,6 @@ body {
   animation: sparkleParticle 0.8s ease-out forwards;
 }
 
-.screen-shake {
-  animation: screenShake 0.3s ease-in-out;
-}
-
 @keyframes digClick {
   0% { transform: scale(0.95) rotate(0deg); }
   50% { transform: scale(1.1) rotate(-2deg); }
@@ -306,12 +397,6 @@ body {
   0% { box-shadow: 0 4px 16px rgba(145, 70, 255, 0.4); }
   50% { box-shadow: 0 8px 32px rgba(145, 70, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.3); }
   100% { box-shadow: 0 4px 16px rgba(145, 70, 255, 0.4); }
-}
-
-@keyframes screenShake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px) rotate(-0.5deg); }
-  20%, 40%, 60%, 80% { transform: translateX(2px) rotate(0.5deg); }
 }
 
 @keyframes sparkleParticle {
@@ -359,12 +444,26 @@ body {
   animation: fadeInUp 1.2s ease;
 }
 
+@media (max-width: 768px) {
+  .achievements {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+}
+
 .treasures {
   margin: 2rem 0;
   background: rgba(30,30,47,0.85);
   border-radius: 12px;
   padding: 1.5rem;
   animation: fadeInUp 1.4s ease;
+}
+
+@media (max-width: 768px) {
+  .treasures {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
 }
 
 .treasures h3 {
@@ -532,6 +631,43 @@ body {
   font-style: italic;
 }
 
+@media (max-width: 768px) {
+  .game-footer {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Mobile touch improvements */
+  .dig-gif {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Better mobile notification positioning */
+  .notification {
+    right: 10px !important;
+    left: 10px !important;
+    max-width: calc(100vw - 20px) !important;
+  }
+  
+  /* Mobile treasure and achievement layout */
+  .treasure-list,
+  .achievement-list {
+    gap: 0.25rem;
+  }
+  
+  .treasure-item,
+  .achievement {
+    font-size: 0.8rem;
+  }
+  
+  /* Mobile upgrade buttons */
+  .upgrade-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -551,16 +687,23 @@ body {
 /* Mobile responsiveness */
 @media (max-width: 600px) {
   .game-stats {
-    gap: 1rem;
+    gap: 0.25rem;
+    flex-wrap: nowrap;
   }
   
   .stat {
-    min-width: 100px;
-    padding: 0.75rem 1rem;
+    min-width: 70px;
+    padding: 0.4rem 0.5rem;
+    flex: 1;
+  }
+  
+  .stat-label {
+    font-size: 0.65rem;
+    margin-bottom: 0.2rem;
   }
   
   .stat-value {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
   .game-area {

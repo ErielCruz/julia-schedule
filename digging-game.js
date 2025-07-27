@@ -17,6 +17,9 @@ class DiggingGame {
   }
 
   init() {
+    // Reset game on page load/reload
+    this.resetGameOnLoad();
+    
     this.loadProgress();
     this.setupEventListeners();
     this.updateDisplay();
@@ -29,6 +32,11 @@ class DiggingGame {
     
     // Update double power timer every second
     setInterval(() => this.updateDoublePower(), 1000);
+  }
+
+  resetGameOnLoad() {
+    // Clear saved data to reset game on every page load
+    localStorage.removeItem('digging-game-save');
   }
 
   setupEventListeners() {
@@ -47,8 +55,8 @@ class DiggingGame {
       const effectiveClicks = this.doublePowerActive ? 2 : 1;
       this.clicks += effectiveClicks;
       this.createEnhancedDigEffect();
-      this.addScreenShake();
       this.animateButton();
+      this.createSoilAnimation();
       this.checkForTreasures();
     }
     
@@ -190,13 +198,40 @@ class DiggingGame {
     }, 4000);
   }
 
-  addScreenShake() {
-    const gameContainer = document.querySelector('.game-container');
-    if (gameContainer) {
-      gameContainer.classList.add('screen-shake');
+  createSoilAnimation() {
+    const holeContainer = document.getElementById('hole-container');
+    if (!holeContainer) return;
+
+    // Array of soil/dirt emojis
+    const soilEmojis = ['🟫', '🪨', '⬛', '🟤', '🔸', '🔹', '⚫'];
+    
+    // Create 3-5 soil particles
+    const particleCount = 3 + Math.floor(Math.random() * 3);
+    
+    for (let i = 0; i < particleCount; i++) {
+      const soilEl = document.createElement('div');
+      soilEl.className = 'soil-particle';
+      soilEl.textContent = soilEmojis[Math.floor(Math.random() * soilEmojis.length)];
+      
+      soilEl.style.cssText = `
+        position: absolute;
+        font-size: ${0.8 + Math.random() * 0.6}rem;
+        z-index: 90;
+        pointer-events: none;
+        left: ${30 + Math.random() * 40}%;
+        bottom: 30%;
+        animation: soilFloat ${2 + Math.random() * 2}s ease-out forwards;
+        animation-delay: ${Math.random() * 0.5}s;
+      `;
+
+      holeContainer.appendChild(soilEl);
+
+      // Remove after animation
       setTimeout(() => {
-        gameContainer.classList.remove('screen-shake');
-      }, 300);
+        if (soilEl.parentNode) {
+          soilEl.parentNode.removeChild(soilEl);
+        }
+      }, 4500);
     }
   }
 
@@ -288,7 +323,7 @@ class DiggingGame {
 
   checkAchievements() {
     const achievementDefs = [
-      { id: 'first-dig', name: 'First Dig', desc: 'Dig your first hole', icon: '🕳️', requirement: () => this.clicks >= 1 },
+      { id: 'first-dig', name: 'First Dig', desc: 'Already better than Julia', icon: '🕳️', requirement: () => this.clicks >= 1 },
       { id: 'dedicated-digger', name: 'Dedicated Digger', desc: 'Make 100 clicks', icon: '⛏️', requirement: () => this.clicks >= 100 },
       { id: 'hole-master', name: 'Hole Master', desc: 'Make 1000 clicks', icon: '👑', requirement: () => this.clicks >= 1000 },
       { id: 'deep-diver', name: 'Deep Diver', desc: 'Reach 10m depth', icon: '🌊', requirement: () => this.depth >= 10 },
@@ -341,10 +376,14 @@ class DiggingGame {
     const notification = document.createElement('div');
     notification.className = 'notification';
     notification.textContent = message;
+    
+    // Check if mobile
+    const isMobile = window.innerWidth <= 768;
+    
     notification.style.cssText = `
       position: fixed;
       top: 20px;
-      right: 20px;
+      ${isMobile ? 'left: 10px; right: 10px;' : 'right: 20px;'}
       background: linear-gradient(45deg, #9146ff, #772ce8);
       color: white;
       padding: 1rem 1.5rem;
@@ -352,7 +391,7 @@ class DiggingGame {
       box-shadow: 0 4px 16px rgba(0,0,0,0.3);
       z-index: 1000;
       animation: slideIn 0.3s ease-out;
-      max-width: 300px;
+      ${isMobile ? 'max-width: calc(100vw - 20px);' : 'max-width: 300px;'}
       font-weight: bold;
     `;
     
