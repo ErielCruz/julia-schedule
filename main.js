@@ -62,19 +62,20 @@ function renderScheduleMarkdown(md) {
 }
 
 // Embed latest YouTube Short
-function embedLatestYouTubeShorts() {
+async function embedLatestYouTubeShorts() {
   const container = document.getElementById('youtube-embeds');
   
   try {
     // Show loading state
     container.innerHTML = '<div class="loading">Loading latest videos...</div>';
     
-    // Replace with actual latest Shorts video IDs
-    const shortIds = [
-      'zXL0Gf45Hso', // Most recent
-      'SEDh1MhtqvA', // Second most recent
-      'f6wasikmjLM'  // Third most recent
-    ];
+    // Fetch YouTube shorts from external file
+    const response = await fetch('youtube-shorts.json');
+    if (!response.ok) {
+      throw new Error(`Failed to load YouTube shorts: ${response.status}`);
+    }
+    const data = await response.json();
+    const shortIds = data.latest_shorts; // Now it's directly an array of IDs
     
     const embedsHtml = shortIds.map(id => `
       <div style="display: flex; flex-direction: column; align-items: center;">
@@ -120,10 +121,10 @@ function embedLatestYouTubeShorts() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   try {
     fetchScheduleMarkdown();
-    embedLatestYouTubeShorts();
+    await embedLatestYouTubeShorts();
     initCustomVideoPlayer();
     // Set current year in footer
     const yearElement = document.getElementById('current-year');
