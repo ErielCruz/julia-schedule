@@ -65,6 +65,64 @@ body {
   transform: translateY(-2px);
 }
 
+/* Other Games Section */
+.other-games {
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+}
+
+.other-games-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.game-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.game-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.game-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.game-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .other-games-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-link {
+    min-width: 180px;
+  }
+}
+
 .game-stats {
   display: flex;
   justify-content: center;

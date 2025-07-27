@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JuliaKins - NES Dig Dug</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
+  <link rel="stylesheet" href="nes-game.css">
+  <script src="https://unpkg.com/jsnes/dist/jsnes.min.js"></script>
+  <script defer src="nes-game.js"></script>
+</head>
+<body>
+  <div class="nes-container">
+    <header class="nes-header">
+      <h1>🕳️ NES Dig Dug - The Original Digging Game!</h1>
+      <p>Experience the classic arcade game that started it all</p>
+      <a href="index.html" class="back-button">← Back to Schedule</a>
+    </header>
+
+    <div class="game-controls">
+      <button id="test-button" class="control-button" style="background: #ff6b35;">🔧 Test Setup</button>
+      <button id="start-button" class="control-button">Start Game</button>
+      <button id="pause-button" class="control-button" disabled>Pause</button>
+      <button id="reset-button" class="control-button">Reset</button>
+      <button id="fullscreen-button" class="control-button">Fullscreen</button>
+    </div>
+
+    <div class="game-area">
+      <div class="screen-container">
+        <canvas id="nes-canvas" width="256" height="240"></canvas>
+        <div id="loading-overlay" class="loading-overlay">
+          <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Dig Dug ROM...</p>
+            <p class="loading-detail">Preparing the ultimate digging experience!</p>
+          </div>
+        </div>
+        <div id="error-overlay" class="error-overlay" style="display: none;">
+          <div class="error-content">
+            <h3>⚠️ Game Load Error</h3>
+            <p id="error-message">Failed to load the game.</p>
+            <button onclick="location.reload()" class="retry-button">Try Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-info">
+      <h3>Controls</h3>
+      <div class="controls-grid">
+        <div class="control-group">
+          <h4>Movement</h4>
+          <div class="control-item">
+            <span class="key">Arrow Keys</span>
+            <span class="action">Move Pooka (Up/Down/Left/Right)</span>
+          </div>
+        </div>
+        <div class="control-group">
+          <h4>Actions</h4>
+          <div class="control-item">
+            <span class="key">Z</span>
+            <span class="action">Pump/Attack</span>
+          </div>
+          <div class="control-item">
+            <span class="key">X</span>
+            <span class="action">Jump/Secondary Action</span>
+          </div>
+        </div>
+        <div class="control-group">
+          <h4>Game</h4>
+          <div class="control-item">
+            <span class="key">Enter</span>
+            <span class="action">Start/Pause</span>
+          </div>
+          <div class="control-item">
+            <span class="key">Space</span>
+            <span class="action">Select</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-info">
+      <h3>About Dig Dug</h3>
+      <p>
+        Dig Dug is a classic arcade game where you play as Pooka, digging tunnels underground 
+        to defeat enemies by inflating them with your pump or by dropping rocks on them. 
+        Master the art of strategic digging and become the ultimate underground warrior!
+      </p>
+      <p>
+        This is the Japanese version of the original arcade classic, brought to you via 
+        JavaScript NES emulation. Perfect practice for Julia's digging skills! 🕳️
+      </p>
+    </div>
+  </div>
+
+  <footer class="nes-footer">
+    <p>Classic NES Gaming - Dig like a pro! 🎮</p>
+    <p>&copy; <span id="current-year"></span> JuliaKins</p>
+  </footer>
+</body>
+</html>

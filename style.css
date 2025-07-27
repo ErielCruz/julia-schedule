@@ -162,6 +162,86 @@ body {
     max-width: 30px;
   }
 }
+
+/* Games Section */
+.games-links {
+  max-width: 1400px;
+  width: 95vw;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+.games-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.game-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #9146ff 0%, #772ce8 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  min-width: 180px;
+  border: 2px solid transparent;
+}
+
+.game-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(145, 70, 255, 0.4);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.game-link:active {
+  transform: translateY(-2px);
+}
+
+.game-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.game-text {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.game-subtitle {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+}
+
+.nes-link {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+}
+
+.nes-link:hover {
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4);
+}
+
+@media (max-width: 600px) {
+  .games-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-link {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 .schedule {
   max-width: 1400px;
   width: 95vw;
