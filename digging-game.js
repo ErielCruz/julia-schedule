@@ -163,10 +163,6 @@ class DiggingGame {
     // Show notification
     this.showNotification(`Found ${treasure.name}! ${treasure.emoji}`);
     
-    // Add bonus clicks based on rarity
-    const bonusClicks = Math.floor((1 - treasure.rarity) * 10);
-    this.clicks += bonusClicks;
-    
     this.updateDisplay();
     this.updateTreasureDisplay();
   }
@@ -241,7 +237,10 @@ class DiggingGame {
       digButton.classList.add('digging');
       setTimeout(() => {
         digButton.classList.remove('digging');
+        this.isDigging = false;
       }, 500);
+    } else {
+      this.isDigging = false;
     }
   }
 
@@ -280,6 +279,8 @@ class DiggingGame {
       
       powerDisplay.innerHTML = powerText;
     }
+
+    this.updateUpgradeButtons();
   }
 
   updateTreasureDisplay() {
