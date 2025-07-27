@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     fetchScheduleMarkdown();
     await embedLatestYouTubeShorts();
     initCustomVideoPlayer();
+    initTimeCounter();
     // Set current year in footer
     const yearElement = document.getElementById('current-year');
     if (yearElement) {
@@ -179,4 +180,44 @@ function initCustomVideoPlayer() {
     console.error('Video error:', e);
     overlay.querySelector('.play-text').textContent = 'Video unavailable';
   });
+}
+
+// Time counter functionality
+function initTimeCounter() {
+  // Set the start date: December 12, 2024 at 14:29:00
+  const startDate = new Date('2024-12-12T14:29:00');
+  
+  function updateCounter() {
+    try {
+      const now = new Date();
+      const timeDiff = now.getTime() - startDate.getTime();
+      
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+      
+      // Update the display
+      const daysElement = document.getElementById('days');
+      const hoursElement = document.getElementById('hours');
+      const minutesElement = document.getElementById('minutes');
+      const secondsElement = document.getElementById('seconds');
+      
+      if (daysElement && hoursElement && minutesElement && secondsElement) {
+        daysElement.textContent = days;
+        hoursElement.textContent = hours;
+        minutesElement.textContent = minutes;
+        secondsElement.textContent = seconds;
+      }
+    } catch (error) {
+      console.error('Error updating time counter:', error);
+    }
+  }
+  
+  // Update immediately
+  updateCounter();
+  
+  // Update every second (1000 milliseconds)
+  setInterval(updateCounter, 1000);
 }

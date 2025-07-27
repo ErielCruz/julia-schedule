@@ -12,6 +12,8 @@
 }
 .schedule h2 {
   text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
 }
 body {
   margin: 0;
@@ -46,6 +48,105 @@ body {
 .social:hover img {
   transform: scale(1.15) rotate(-5deg);
   box-shadow: 0 2px 12px #fff2;
+}
+.time-counter {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(35, 35, 74, 0.6);
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  animation: fadeInUp 1.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.counter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-label {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.counter-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.peepo-dig-gif {
+  height: 100%;
+  width: auto;
+  min-height: 60px;
+  max-width: 60px;
+  object-fit: contain;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+.counter-display span {
+  color: #9146ff;
+}
+
+@media (max-width: 600px) {
+  .time-counter {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    max-width: 90%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .peepo-dig-gif {
+    min-height: 40px;
+    max-width: 40px;
+  }
+  
+  .counter-display {
+    font-size: 1rem;
+  }
+  
+  .counter-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .counter-display {
+    font-size: 0.9rem;
+  }
+  
+  .peepo-dig-gif {
+    min-height: 30px;
+    max-width: 30px;
+  }
 }
 .schedule {
   max-width: 1400px;
