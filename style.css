@@ -242,3 +242,48 @@ footer {
   margin-top: 2rem;
   background: none;
 }
+
+/* Loading and error states */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+.error-message {
+  text-align: center;
+  padding: 2rem;
+  background: #ff4444;
+  border-radius: 8px;
+  color: white;
+  margin: 1rem;
+}
+
+.error-details {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+.retry-button {
+  background: #fff;
+  color: #ff4444;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.retry-button:hover {
+  background: #f0f0f0;
+}
+
+.no-schedule {
+  text-align: center;
+  padding: 2rem;
+  color: #ccc;
+  font-style: italic;
+}

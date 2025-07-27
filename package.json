@@ -1,19 +1,15 @@
 {
-  "name": "discord-schedule-bot",
+  "name": "julia-schedule",
   "version": "1.0.0",
-  "description": "Discord bot to update stream schedule via Cloudflare Worker",
-  "main": "discord-bot.js",
+  "description": "JuliaKins stream schedule website",
+  "main": "index.html",
   "scripts": {
-    "start": "node discord-bot.js",
-    "dev": "nodemon discord-bot.js"
+    "serve": "python -m http.server 8000",
+    "serve-win": "python -m http.server 8000"
   },
-  "dependencies": {
-    "discord.js": "^14.14.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.2"
-  },
-  "keywords": ["discord", "bot", "schedule", "twitch", "streaming"],
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": ["schedule", "twitch", "streaming", "website"],
   "author": "JuliaKins",
   "license": "MIT"
 }
