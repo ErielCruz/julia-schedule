@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JuliaKins - Hole Digging Simulator</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+  <link rel="stylesheet" href="digging-game.css">
+  <script defer src="digging-game.js"></script>
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1>🕳️ Hole Digging Simulator</h1>
+      <p>Click to dig deeper! How deep can you go?</p>
+      <a href="index.html" class="back-button">← Back to Schedule</a>
+    </header>
+
+    <div class="game-stats">
+      <div class="stat">
+        <span class="stat-label">Clicks:</span>
+        <span id="click-counter" class="stat-value">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Depth:</span>
+        <span id="depth-display" class="stat-value">0.0m</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Dig Power:</span>
+        <span id="power-display" class="stat-value">1x</span>
+      </div>
+    </div>
+
+    <div class="game-area">
+      <div class="ground-level">
+        <div class="grass">🌱🌿🌱🌿🌱🌿🌱🌿🌱🌿🌱🌿🌱🌿🌱🌿</div>
+        <div class="surface">Ground Level</div>
+      </div>
+      
+      <div class="hole-container" id="hole-container">
+        <div class="hole-walls">
+          <div class="wall left-wall"></div>
+          <div class="hole-content" id="hole-content">
+            <div class="dig-area" id="dig-area">
+              <div class="dig-button" id="dig-button">
+                <img src="peepoDig.gif" alt="Dig!" class="dig-gif">
+                <div class="dig-text">Click to Dig!</div>
+              </div>
+            </div>
+          </div>
+          <div class="wall right-wall"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="achievements" id="achievements">
+      <h3>Achievements</h3>
+      <div class="achievement-list" id="achievement-list">
+        <!-- Achievements will be added here -->
+      </div>
+    </div>
+
+    <div class="treasures" id="treasures">
+      <h3>Treasures Found</h3>
+      <div class="treasure-list" id="treasure-list">
+        <p class="no-treasures">Start digging to find treasures!</p>
+      </div>
+    </div>
+
+    <div class="upgrades" id="upgrades">
+      <h3>Upgrades</h3>
+      <div class="upgrade-list">
+        <button class="upgrade-button" id="power-upgrade" onclick="buyUpgrade('power')">
+          <span class="upgrade-name">Better Shovel</span>
+          <span class="upgrade-cost" id="power-cost">Cost: 50 clicks</span>
+        </button>
+        <button class="upgrade-button" id="auto-dig" onclick="buyUpgrade('auto')" disabled>
+          <span class="upgrade-name">Double Power Boost</span>
+          <span class="upgrade-cost">Cost: 500 clicks</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="game-footer">
+    <p>Keep digging, Julia! 🕳️</p>
+  </footer>
+</body>
+</html>

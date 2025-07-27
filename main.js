@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await embedLatestYouTubeShorts();
     initCustomVideoPlayer();
     initTimeCounter();
+    initDiggingGameLink();
     // Set current year in footer
     const yearElement = document.getElementById('current-year');
     if (yearElement) {
@@ -220,4 +221,38 @@ function initTimeCounter() {
   
   // Update every second (1000 milliseconds)
   setInterval(updateCounter, 1000);
+}
+
+// Initialize digging game link
+function initDiggingGameLink() {
+  const peepoDig = document.querySelector('.peepo-dig-gif');
+  
+  if (!peepoDig) {
+    console.warn('PeepoDig gif not found');
+    return;
+  }
+  
+  // Make it clickable
+  peepoDig.style.cursor = 'pointer';
+  peepoDig.title = 'Click to play the hole digging game!';
+  
+  // Add click handler
+  peepoDig.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // Open the digging game in a new tab
+    window.open('digging-game.html', '_blank');
+  });
+  
+  // Add hover effect
+  peepoDig.addEventListener('mouseenter', () => {
+    peepoDig.style.filter = 'brightness(1.2) drop-shadow(0 0 8px #9146ff)';
+    peepoDig.style.transform = 'scale(1.1)';
+  });
+  
+  peepoDig.addEventListener('mouseleave', () => {
+    peepoDig.style.filter = '';
+    peepoDig.style.transform = '';
+  });
 }

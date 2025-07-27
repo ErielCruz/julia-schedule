@@ -1,0 +1,599 @@
+/* Game-specific styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f 0%, #23234a 100%);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.game-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  animation: fadeIn 1s ease;
+}
+
+.game-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.game-header p {
+  margin: 0 0 1rem 0;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(145, 70, 255, 0.2);
+  border: 2px solid #9146ff;
+  border-radius: 8px;
+  color: #9146ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background: rgba(145, 70, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.game-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: rgba(35, 35, 74, 0.6);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #9146ff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.double-power-indicator {
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  color: #000;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  animation: powerGlow 1s ease-in-out infinite alternate;
+  display: inline-block;
+}
+
+@keyframes powerGlow {
+  0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+  100% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); }
+}
+
+.treasure-float {
+  position: absolute;
+  font-size: 2rem;
+  z-index: 100;
+  pointer-events: none;
+  animation: treasureFloat 4s ease-out forwards;
+}
+
+@keyframes treasureFloat {
+  0% {
+    transform: translateY(0) scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1) rotate(10deg);
+  }
+  50% {
+    transform: translateY(-100px) scale(1.2) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(0.8) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+.game-area {
+  position: relative;
+  margin: 2rem auto;
+  width: 400px;
+  max-width: 90vw;
+}
+
+.ground-level {
+  background: #8B4513;
+  padding: 1rem;
+  border-radius: 12px 12px 0 0;
+  border: 3px solid #654321;
+  position: relative;
+  z-index: 10;
+}
+
+.grass {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.surface {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.hole-container {
+  position: relative;
+  height: 300px; /* Fixed height - no growing */
+  background: linear-gradient(to bottom, #8B4513 0%, #654321 20%, #4A2C17 50%, #2F1B0C 100%);
+  border: 3px solid #654321;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden; /* Hide content that goes beyond */
+}
+
+.hole-walls {
+  display: flex;
+  height: 100%;
+  height: 300px; /* Fixed height */
+}
+
+.wall {
+  width: 30px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #4A2C17 0px,
+    #4A2C17 10px,
+    #3A1F12 10px,
+    #3A1F12 20px
+  );
+  border-right: 2px solid #2F1B0C;
+  position: relative;
+}
+
+.left-wall {
+  border-left: 2px solid #2F1B0C;
+}
+
+.hole-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+  position: relative;
+  height: 100%; /* Remove transition and min-height changes */
+}
+
+.dig-area {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dig-button {
+  background: rgba(145, 70, 255, 0.2);
+  border: 2px solid #9146ff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dig-button:hover {
+  background: rgba(145, 70, 255, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(145, 70, 255, 0.4);
+}
+
+.dig-button:active {
+  transform: scale(0.95);
+  animation: digClick 0.3s ease-out;
+}
+
+.dig-button.digging {
+  animation: digPulse 0.5s ease-out;
+}
+
+.dig-gif {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: all 0.2s ease;
+}
+
+.dig-text {
+  font-size: 0.7rem;
+  color: #9146ff;
+  font-weight: bold;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.dig-effect {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #8B4513;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: digParticle 0.6s ease-out forwards;
+}
+
+.dig-effect.dirt {
+  background: #654321;
+}
+
+.dig-effect.rock {
+  background: #555;
+  border-radius: 20%;
+}
+
+.dig-effect.sparkle {
+  background: radial-gradient(circle, #FFD700, #FFA500);
+  animation: sparkleParticle 0.8s ease-out forwards;
+}
+
+.screen-shake {
+  animation: screenShake 0.3s ease-in-out;
+}
+
+@keyframes digClick {
+  0% { transform: scale(0.95) rotate(0deg); }
+  50% { transform: scale(1.1) rotate(-2deg); }
+  100% { transform: scale(1.05) rotate(0deg); }
+}
+
+@keyframes digPulse {
+  0% { box-shadow: 0 4px 16px rgba(145, 70, 255, 0.4); }
+  50% { box-shadow: 0 8px 32px rgba(145, 70, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.3); }
+  100% { box-shadow: 0 4px 16px rgba(145, 70, 255, 0.4); }
+}
+
+@keyframes screenShake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px) rotate(-0.5deg); }
+  20%, 40%, 60%, 80% { transform: translateX(2px) rotate(0.5deg); }
+}
+
+@keyframes sparkleParticle {
+  0% {
+    transform: scale(0.5) translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2) translate(calc(var(--dx) * 0.5), calc(var(--dy) * 0.5)) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.2) translate(var(--dx), var(--dy)) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes digParticle {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.2) translate(var(--dx), var(--dy));
+    opacity: 0;
+  }
+}
+
+.depth-marker {
+  position: absolute;
+  right: -50px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.achievements {
+  margin: 2rem 0;
+  background: rgba(30,30,47,0.85);
+  border-radius: 12px;
+  padding: 1.5rem;
+  animation: fadeInUp 1.2s ease;
+}
+
+.treasures {
+  margin: 2rem 0;
+  background: rgba(30,30,47,0.85);
+  border-radius: 12px;
+  padding: 1.5rem;
+  animation: fadeInUp 1.4s ease;
+}
+
+.treasures h3 {
+  color: #FFD700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.treasure-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.treasure-item {
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  animation: treasureAppear 0.5s ease-out;
+}
+
+.treasure-item.legendary {
+  border-color: #FF6B6B;
+  background: rgba(255, 107, 107, 0.1);
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+}
+
+.treasure-item.epic {
+  border-color: #9B59B6;
+  background: rgba(155, 89, 182, 0.1);
+}
+
+.treasure-item.rare {
+  border-color: #3498DB;
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.treasure-emoji {
+  font-size: 1.2rem;
+}
+
+.no-treasures {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+@keyframes treasureAppear {
+  from {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.achievements h3 {
+  margin-top: 0;
+  color: #9146ff;
+  text-align: center;
+}
+
+.achievement-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.achievement {
+  background: rgba(35, 35, 74, 0.6);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 150px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.achievement.unlocked {
+  border-color: #9146ff;
+  box-shadow: 0 2px 8px rgba(145, 70, 255, 0.3);
+}
+
+.achievement-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-name {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.achievement-desc {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.upgrades {
+  margin: 2rem 0;
+  background: rgba(30,30,47,0.85);
+  border-radius: 12px;
+  padding: 1.5rem;
+  animation: fadeInUp 1.4s ease;
+}
+
+.upgrades h3 {
+  margin-top: 0;
+  color: #9146ff;
+  text-align: center;
+}
+
+.upgrade-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.upgrade-button {
+  background: rgba(35, 35, 74, 0.6);
+  border: 2px solid #666;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upgrade-button:not(:disabled):hover {
+  border-color: #9146ff;
+  background: rgba(145, 70, 255, 0.2);
+}
+
+.upgrade-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.upgrade-name {
+  font-weight: bold;
+}
+
+.upgrade-cost {
+  color: #9146ff;
+  font-size: 0.9rem;
+}
+
+.game-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes holeDeepen {
+  from { min-height: var(--start-height); }
+  to { min-height: var(--end-height); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .game-stats {
+    gap: 1rem;
+  }
+  
+  .stat {
+    min-width: 100px;
+    padding: 0.75rem 1rem;
+  }
+  
+  .stat-value {
+    font-size: 1.2rem;
+  }
+  
+  .game-area {
+    width: 300px;
+  }
+  
+  .wall {
+    width: 20px;
+  }
+  
+  .upgrade-button {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .game-header h1 {
+    font-size: 2rem;
+  }
+  
+  .game-area {
+    width: 250px;
+  }
+  
+  .dig-button {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .dig-gif {
+    width: 30px;
+    height: 30px;
+  }
+}

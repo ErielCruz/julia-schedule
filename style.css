@@ -97,6 +97,20 @@ body {
   max-width: 60px;
   object-fit: contain;
   animation: bounce 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.peepo-dig-gif.clickable {
+  cursor: pointer;
+}
+
+.peepo-dig-gif.clickable:hover {
+  transform: scale(1.1) rotate(5deg);
+  filter: brightness(1.2) drop-shadow(0 0 10px rgba(145, 70, 255, 0.5));
+}
+
+.peepo-dig-gif.clickable:active {
+  transform: scale(0.95);
 }
 
 @keyframes bounce {
