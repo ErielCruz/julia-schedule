@@ -1,3 +1,15 @@
+/* Center the YouTube Short embed */
+.latest-youtube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Center the YouTube Short embed */
+.latest-youtube h2 {
+  text-align: center;
+  width: 100%;
+}
 .schedule h2 {
   text-align: center;
 }
@@ -36,7 +48,8 @@ body {
   box-shadow: 0 2px 12px #fff2;
 }
 .schedule {
-  max-width: 400px;
+  max-width: 1400px;
+  width: 95vw;
   margin: 2rem auto;
   background: rgba(30,30,47,0.85);
   border-radius: 16px;
@@ -44,38 +57,87 @@ body {
   box-shadow: 0 2px 16px #0002;
   animation: fadeInUp 1.2s ease;
 }
+
 #schedule-list {
   margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 
-/* Style Markdown schedule items as cards */
-.schedule #schedule-list h3 {
+/* Schedule cards from JavaScript */
+.schedule-card {
   background: #23234a;
-  border-radius: 10px 10px 0 0;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-  padding: 0.75rem 1rem 0.25rem 1rem;
+  border-radius: 10px;
   box-shadow: 0 1px 8px #0001;
-  font-size: 1.1rem;
-  animation: fadeIn 0.7s ease;
-}
-.schedule #schedule-list p {
-  background: #23234a;
-  border-radius: 0 0 10px 10px;
-  margin: 0 0 1rem 0;
-  padding: 0.25rem 1rem 0.75rem 1rem;
-  box-shadow: 0 1px 8px #0001;
-  font-size: 1rem;
+  padding: 0.75rem 1rem;
   animation: fadeInUp 0.7s ease;
+  height: fit-content;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.schedule-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.schedule-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.schedule-card p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Responsive design for tablets and mobile */
+@media (max-width: 1200px) {
+  #schedule-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #schedule-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Latest content section */
+.latest-content {
+  max-width: 1400px;
+  width: 95vw;
+  margin: 2rem auto;
+}
+
 @media (max-width: 600px) {
   .schedule {
-    max-width: 95vw;
+    width: auto;
+    max-width: none;
+    margin: 0.5rem 1rem;
     padding: 1rem;
   }
   .profile-img {
     width: 80px;
     height: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .schedule {
+    width: auto;
+    margin: 0.5rem 0.75rem;
+    padding: 0.75rem;
+  }
+  .hero {
+    padding: 1.5rem 0.75rem 1rem 0.75rem;
   }
 }
 @keyframes fadeIn {
