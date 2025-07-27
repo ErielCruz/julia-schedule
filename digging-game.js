@@ -114,26 +114,26 @@ class DiggingGame {
   checkForTreasures() {
     const treasureDefinitions = [
       // Common treasures (every 10-50 clicks)
-      { type: 'bone', emoji: '🦴', rarity: 0.3, minClicks: 10, name: 'Old Bone' },
-      { type: 'pottery', emoji: '🏺', rarity: 0.25, minClicks: 20, name: 'Ancient Pottery' },
-      { type: 'fossil', emoji: '🐚', rarity: 0.2, minClicks: 30, name: 'Fossil Shell' },
+      { type: 'bone', emoji: '🦴', rarity: 0.35, minClicks: 10, name: 'Old Bone' },
+      { type: 'pottery', emoji: '🏺', rarity: 0.30, minClicks: 15, name: 'Ancient Pottery' },
+      { type: 'fossil', emoji: '🐚', rarity: 0.25, minClicks: 20, name: 'Fossil Shell' },
       
       // Uncommon treasures (every 50-100 clicks)
-      { type: 'coin', emoji: '🪙', rarity: 0.15, minClicks: 50, name: 'Ancient Coin' },
-      { type: 'skull', emoji: '💀', rarity: 0.12, minClicks: 75, name: 'Mysterious Skull' },
-      
+      { type: 'coin', emoji: '🪙', rarity: 0.20, minClicks: 30, name: 'Ancient Coin' },
+      { type: 'skull', emoji: '💀', rarity: 0.15, minClicks: 40, name: 'Mysterious Skull' },
+
       // Rare treasures (every 100+ clicks)
-      { type: 'gold', emoji: '🥇', rarity: 0.08, minClicks: 100, name: 'Gold Nugget' },
-      { type: 'ruby', emoji: '💎', rarity: 0.05, minClicks: 200, name: 'Precious Ruby' },
-      { type: 'emerald', emoji: '💚', rarity: 0.03, minClicks: 300, name: 'Emerald Gem' },
-      
+      { type: 'gold', emoji: '🥇', rarity: 0.08, minClicks: 50, name: 'Gold Nugget' },
+      { type: 'ruby', emoji: '💎', rarity: 0.05, minClicks: 65, name: 'Precious Ruby' },
+      { type: 'emerald', emoji: '💚', rarity: 0.03, minClicks: 80, name: 'Emerald Gem' },
+
       // Epic treasures (every 500+ clicks)
-      { type: 'diamond', emoji: '💍', rarity: 0.02, minClicks: 500, name: 'Diamond Ring' },
-      { type: 'crown', emoji: '👑', rarity: 0.01, minClicks: 750, name: 'Royal Crown' },
+      { type: 'diamond', emoji: '💍', rarity: 0.02, minClicks: 100, name: 'Diamond Ring' },
+      { type: 'crown', emoji: '👑', rarity: 0.01, minClicks: 150, name: 'Royal Crown' },
       
       // Legendary treasures (every 1000+ clicks)
-      { type: 'artifact', emoji: '🏛️', rarity: 0.005, minClicks: 1000, name: 'Ancient Artifact' },
-      { type: 'treasure', emoji: '🗝️', rarity: 0.002, minClicks: 1500, name: 'Master Key' }
+      { type: 'artifact', emoji: '🏛️', rarity: 0.005, minClicks: 180, name: 'Ancient Artifact' },
+      { type: 'treasure', emoji: '🗝️', rarity: 0.002, minClicks: 220, name: 'Master Key' }
     ];
 
     treasureDefinitions.forEach(treasure => {
