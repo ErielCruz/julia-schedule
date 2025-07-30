@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JuliaKins - Ping Pong Challenge</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
+  <link rel="stylesheet" href="ping-game.css">
+  <script defer src="ping-game.js"></script>
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1>🏓 Julia's Ping Pong Challenge</h1>
+      <p>Defend your lanes and send those balls back!</p>
+      <a href="index.html" class="back-button">← Back to Schedule</a>
+    </header>
+
+    <div class="game-ui">
+      <div class="score-panel">
+        <div class="score-item">
+          <span class="score-label">Score</span>
+          <span id="score" class="score-value">0</span>
+        </div>
+        <div class="score-item">
+          <span class="score-label">Lives</span>
+          <span id="lives" class="score-value">3</span>
+        </div>
+        <div class="score-item">
+          <span class="score-label">Level</span>
+          <span id="level" class="score-value">1</span>
+        </div>
+      </div>
+
+      <div class="game-controls">
+        <button id="start-button" class="control-button start">Start Game</button>
+        <button id="pause-button" class="control-button" disabled>Pause</button>
+        <button id="reset-button" class="control-button">Reset</button>
+      </div>
+    </div>
+
+    <div class="game-area" id="gameArea">
+      <div class="lane" data-lane="0">
+        <div class="lane-marker">Lane 1</div>
+      </div>
+      <div class="lane" data-lane="1">
+        <div class="lane-marker">Lane 2</div>
+      </div>
+      <div class="lane" data-lane="2">
+        <div class="lane-marker">Lane 3</div>
+      </div>
+      <div class="lane" data-lane="3">
+        <div class="lane-marker">Lane 4</div>
+      </div>
+      <div class="lane" data-lane="4">
+        <div class="lane-marker">Lane 5</div>
+      </div>
+      
+      <!-- Obstacles container -->
+      <div id="obstacles-container"></div>
+      
+      <!-- Player -->
+      <div id="player" class="player">
+        <img src="julia_ping.png" alt="Julia" class="player-image">
+      </div>
+      
+      <!-- Balls container -->
+      <div id="balls-container"></div>
+      
+      <!-- Game overlay messages -->
+      <div id="game-overlay" class="game-overlay" style="display: none;">
+        <div class="overlay-content">
+          <h2 id="overlay-title">Game Over</h2>
+          <p id="overlay-message">You scored 0 points!</p>
+          <button id="overlay-button" class="control-button start">Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile touch controls -->
+    <div class="mobile-controls">
+      <div class="movement-row">
+        <button id="left-button" class="control-button movement-button">
+          ← LEFT
+        </button>
+        <button id="right-button" class="control-button movement-button">
+          RIGHT →
+        </button>
+      </div>
+      <div class="action-row">
+        <button id="hit-button" class="control-button action-button">
+          🏓 HIT
+        </button>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <h3>How to Play</h3>
+      <div class="instructions-grid">
+        <div class="instruction-group">
+          <h4>Desktop Controls</h4>
+          <div class="control-item">
+            <span class="key">Arrow Keys / A,D</span>
+            <span class="action">Move left and right between lanes</span>
+          </div>
+          <div class="control-item">
+            <span class="key">Space</span>
+            <span class="action">Hit the ball back</span>
+          </div>
+        </div>
+        <div class="instruction-group">
+          <h4>Mobile Controls</h4>
+          <div class="control-item">
+            <span class="key">LEFT/RIGHT Buttons</span>
+            <span class="action">Move Julia between lanes</span>
+          </div>
+          <div class="control-item">
+            <span class="key">HIT Button</span>
+            <span class="action">Send the ball back</span>
+          </div>
+        </div>
+        <div class="instruction-group">
+          <h4>Game Rules</h4>
+          <p>• Move Julia left and right to position her in the correct lane</p>
+          <p>• Hit the ball back at the right time to score points</p>
+          <p>• Avoid obstacles (red blocks) or lose a life!</p>
+          <p>• Miss balls and lose lives - game over at 0 lives!</p>
+          <p>• Mobile version is 35% slower for easier control</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="game-footer">
+    <p>Ping Pong like a pro! 🏓</p>
+    <p>&copy; <span id="current-year"></span> JuliaKins</p>
+  </footer>
+</body>
+</html>
