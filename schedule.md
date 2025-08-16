@@ -1,21 +1,21 @@
-### Sunday 8/3
-DESKTOP & RUNESCAPE
+### Saturday 8/16
+UFC WATCHPARTY AT THE OTK HOUSE
 
-### Monday 8/4
-MISTER ARTHER'S CHANNEL
+### Sunday 8/17
+COLOSSAL CON 
 
-### Tuesday 8/5
+### Monday 8/18
+OFF (parents coming into town!)
+
+### Tuesday 8/19
+DRESS TO IMPRESS: FALL EDITION
+
+### Wednesday 8/20
 STREAM
 
-### Wednesday 8/6
+### Thursday 8/21
 STREAM
 
-### Thursday 8/7
-OFF (traveling)
-
-### Friday 8/8
-TBD
-
-### Saturday 8/9
+### Friday 8/22
 TBD
 
