@@ -1,9 +1,3 @@
-### Saturday 8/16
-UFC WATCHPARTY AT THE OTK HOUSE
-
-### Sunday 8/17
-COLOSSAL CON 
-
 ### Monday 8/18
 OFF (parents coming into town!)
 
@@ -11,11 +5,17 @@ OFF (parents coming into town!)
 DRESS TO IMPRESS: FALL EDITION
 
 ### Wednesday 8/20
-STREAM
+OFF
 
 ### Thursday 8/21
-STREAM
+RATING FAST FOOD VALUE MENUS
 
 ### Friday 8/22
-TBD
+STREAM
+
+### Saturday 8/23
+STREAM + AMANDA'S STREAM
+
+### Sunday 8/24
+STREAM
 
