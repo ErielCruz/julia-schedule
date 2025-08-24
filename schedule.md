@@ -1,21 +1,21 @@
-### Monday 8/18
-OFF (parents coming into town!)
-
-### Tuesday 8/19
-DRESS TO IMPRESS: FALL EDITION
-
-### Wednesday 8/20
+### Sunday 8/24
 OFF
 
-### Thursday 8/21
-RATING FAST FOOD VALUE MENUS
+### Monday 8/25
+MMA WITH DEANSOCOOL
 
-### Friday 8/22
+### Tuesday 8/26
 STREAM
 
-### Saturday 8/23
-STREAM + AMANDA'S STREAM
-
-### Sunday 8/24
+### Wednesday 8/27
 STREAM
+
+### Thursday 8/28
+ROADTRIP & CITY EXPLORING WITH JOSH
+
+### Friday 8/29
+SAN JAPAN CONVENTION & COSPLAY
+
+### Saturday 8/30
+MELEE EVENT (Probably no stream)
 
