@@ -17,5 +17,5 @@ ROADTRIP & CITY EXPLORING WITH JOSH
 SAN JAPAN CONVENTION & COSPLAY
 
 ### Saturday 8/30
-MELEE EVENT (Probably no stream)
+MELEE EVENT (Probably no stream?)
 
