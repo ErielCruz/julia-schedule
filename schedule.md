@@ -1,21 +1,3 @@
-### Sunday 8/24
-OFF
-
-### Monday 8/25
-MMA WITH DEANSOCOOL
-
-### Tuesday 8/26
-STREAM WITH PIERCEKJACKSON
-
-### Wednesday 8/27
-STREAM
-
-### Thursday 8/28
-ROADTRIP & CITY EXPLORING WITH JOSH
-
-### Friday 8/29
-SAN JAPAN CONVENTION & COSPLAY
-
-### Saturday 8/30
-MELEE EVENT (Probably no stream?)
+### Tuesday 9/2
+EMIRU/EMILY BBQ WATERPARK PARTY
 
