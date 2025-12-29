@@ -1,21 +1,21 @@
-### Friday 12/19
-EMIRU/CINNA/BONNIE CHRISTMAS PARTY
-
-### Saturday 12/20
-STREAM + EXTRA EMILY AWARD SHOW
-
-### Sunday 12/21
-QT'S CHRISRMAS CHARITY CONCERT
-
-### Monday 12/22
+### Thursday 1/1
 TBD
 
-### Tuesday 12/23
-CHRISTMAS COSPLAY W/ JOSHINAROUND
+### Friday 1/2
+TBD
 
-### Wednesday 12/24
-CHRISTMAS EVE! 🎄
+### Saturday 1/3
+TBD
 
-### Thursday 12/25
-MERRY CHRISTMAS! 🎁
+### Sunday 12/28
+SICK :(
+
+### Monday 12/29
+NEW YEARS RESOLUTIONS/DESKTOP STREAM
+
+### Tuesday 12/30
+BAT CAGES AT ALVEUS W/ ARTHER, KNUT, & JOSH
+
+### Wednesday 12/31
+STREAM
 
