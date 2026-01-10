@@ -1,21 +1,21 @@
-### Thursday 1/1
+### Saturday 1/9
+IKKICON CONVENTION + NEKOPARA COSPLAY
+
+### Sunday 1/10
 TBD
 
-### Friday 1/2
+### Monday 1/11
 TBD
 
-### Saturday 1/3
+### Tuesday 1/12
+OFF
+
+### Wednesday 1/13
 TBD
 
-### Sunday 12/28
-SICK :(
+### Thursday 1/14
+TBD
 
-### Monday 12/29
-NEW YEARS RESOLUTIONS/DESKTOP STREAM
-
-### Tuesday 12/30
-BAT CAGES AT ALVEUS W/ ARTHER, KNUT, & JOSH
-
-### Wednesday 12/31
-STREAM
+### Friday 1/15
+TBD
 
