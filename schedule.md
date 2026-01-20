@@ -10,6 +10,9 @@ OFF
 ### Friday 1/23
 STREAM
 
+### Saturday 1/24
+STREAM
+
 ### Sunday 1/25
 SUNDAY DINNER W/ FRIENDS
 
