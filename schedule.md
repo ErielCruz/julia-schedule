@@ -1,21 +1,18 @@
-### Saturday 1/9
-IKKICON CONVENTION + NEKOPARA COSPLAY
-
-### Sunday 1/10
-TBD
-
-### Monday 1/11
-TBD
-
-### Tuesday 1/12
+### Tuesday 1/20
 OFF
 
-### Wednesday 1/13
-TBD
+### Wednesday 1/21
+UNBAN REQUESTS
 
-### Thursday 1/14
-TBD
+### Thursday 1/22
+OFF
 
-### Friday 1/15
-TBD
+### Friday 1/23
+STREAM
+
+### Sunday 1/25
+SUNDAY DINNER W/ FRIENDS
+
+### Monday 1/26
+STREAM
 
