@@ -1,21 +1,21 @@
 ### Sunday 1/25
-SUNDAY DINNER W/ FRIENDS
+OFF (WINTER STORM)
 
 ### Monday 1/26
-STREAM
+COOKING SOUP IN THE SNOW 
 
 ### Tuesday 1/27
-OFF
+GAMING ON KICK ALT 💚
 
 ### Wednesday 1/28
-STREAM
+DOUG DOUG CHALLENGE W/ EE, MAYA, & ZOIL🍔
 
 ### Thursday 1/29
-OFF
+STREAM ☕
 
 ### Friday 1/30
-STREAM
+STREAM W/ PEACHJARS 🐶
 
 ### Saturday 1/31
-STREAM
+TBD 🥦
 
