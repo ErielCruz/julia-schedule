@@ -1,12 +1,3 @@
-### Sunday 1/25
-OFF (WINTER STORM)
-
-### Monday 1/26
-COOKING SOUP IN THE SNOW 
-
-### Tuesday 1/27
-GAMING ON KICK ALT 💚
-
 ### Wednesday 1/28
 DOUG DOUG CHALLENGE W/ EE, MAYA, & ZOIL🍔
 
@@ -18,4 +9,13 @@ STREAM W/ PEACHJARS 🐶
 
 ### Saturday 1/31
 TBD 🥦
+
+### Sunday 2/1
+TBD
+
+### Monday 2/2
+SPECIAL COLLAB 😋
+
+### Tuesday 2/3
+STREAM
 
