@@ -1,21 +1,21 @@
-### Wednesday 1/28
-DOUG DOUG CHALLENGE W/ EE, MAYA, & ZOIL🍔
-
-### Thursday 1/29
-PROTEIN HOT CHOCOLATE BAR @ IRON FORGE
-
-### Friday 1/30
-PUPPY PLAYDATE W/ PEACHJARS 🐶
-
-### Saturday 1/31
+### Wednesday 2/4
 OFF
 
-### Sunday 2/1
-MY 2 YEAR STREAM ANNIVERSARY 
+### Thursday 2/5
+STREAM TBA
 
-### Monday 2/2
-SPECIAL COLLAB 😋
+### Friday 2/6
+MISTERARTHER'S CHANNEL 🐶
 
-### Tuesday 2/3
-STREAM
+### Saturday 2/7
+STREAM TBA 🌼
+
+### Sunday 2/8
+TBD
+
+### Monday 2/9
+TBD
+
+### Tuesday 2/10
+MISTERARTHER'S CHANNEL 🐶
 
