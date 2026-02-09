@@ -1,21 +1,21 @@
-### Wednesday 2/4
+### Sunday 2/8
 OFF
 
-### Thursday 2/5
-KICK STREAM
-
-### Friday 2/6
-SOAPBOX CAR ON MISTERARTHER'S CHANNEL 🐶
-
-### Saturday 2/7
-FARMERS MARKET + MAKING A MEAL FROM THINGS I BUY🥑 
-
-### Sunday 2/8
-TBD
-
 ### Monday 2/9
-TBD
+MAKING SWEET TREATS FOR MY FRIENDS ❤️🍰
 
 ### Tuesday 2/10
 MISTERARTHER'S CHANNEL 🐶
+
+### Wednesday 2/11
+GIRL COLLAB SLAYYY 🎀
+
+### Thursday 2/12
+TBD (AFTERNOON STREAM?)
+
+### Friday 2/13
+STREAM TBA 🧸
+
+### Saturday 2/14
+SPECIAL STREAM ON ARTHER'S CHANNEL ❤️🐶
 
