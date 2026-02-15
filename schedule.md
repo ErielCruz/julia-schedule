@@ -1,21 +1,21 @@
-### Monday 2/9
-MAKING SWEET TREATS FOR MY FRIENDS ❤️🍰
-
-### Tuesday 2/10
-SOAPBOX ON MISTERARTHER'S CHANNEL 🐶
-
-### Wednesday 2/11
-SUPER SECRET COLLAB ✈️
-
-### Thursday 2/12
-COLLAB W/ ____ PT 2🤫
-
-### Friday 2/13
-TURNING ME & ARTHER EMO FOR FRIDAY THE 13TH
-
-### Saturday 2/14
-SPECIAL STREAM ON ARTHER'S CHANNEL ❤️🐶
-
 ### Sunday 2/15
 OFF
+
+### Monday 2/16
+STREAM
+
+### Tuesday 2/17
+TBD
+
+### Wednesday 2/18
+TBD
+
+### Thursday 2/19
+TBD
+
+### Friday 2/20
+TBD
+
+### Saturday 2/21
+TBD
 
