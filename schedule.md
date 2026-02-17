@@ -1,21 +1,21 @@
-### Sunday 2/15
-OFF
-
-### Monday 2/16
-STREAM
-
 ### Tuesday 2/17
-TBD
+GYM W/ ARTHER 💪🏼
 
 ### Wednesday 2/18
-TBD
+STREAM TBA 👚
 
 ### Thursday 2/19
-TBD
+STREAM TBA 🍔
 
 ### Friday 2/20
-TBD
+OFF
 
 ### Saturday 2/21
-TBD
+SUPER SPECIAL STREAM W/ ARTHER 🌴
+
+### Sunday 2/22
+ARTKINS VS CYRJARS
+
+### Monday 2/23
+OFF
 
