@@ -1,21 +1,21 @@
-### Friday 2/27
-TOUCHING GRASS
+### Sunday 3/8
+WOW KICK STREAM💚
 
-### Saturday 2/28
-STREAM? 
+### Monday 3/9
+INDOOR WATER PARK W/ ARTHER 💦 WOW MYTHIC+ AFTER💚 
 
-### Sunday 3/1
-STREAM ON ARTHER'S CHANNEL
+### Tuesday 3/10
+COLLAB ON ARTHER'S CHANNEL 🐶
 
-### Monday 3/2
-STREAM + WOW MIDNIGHT W/ GRAYCEN
+### Wednesday 3/11
+OFF (ALT STREAM?)
 
-### Tuesday 3/3
-COLLAB W/ SAKURA 
+### Thursday 3/12
+BIRTHDAY STREAM 🎂
 
-### Wednesday 3/4
-COOK FOR EMI'S NEW YEAR PARTY
+### Friday 3/13
+TBA
 
-### Thursday 3/5
-OFF
+### Saturday 3/14
+TBA 🤫
 
