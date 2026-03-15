@@ -8,7 +8,7 @@ ARTHER'S BIRTHDAY STREAM 🐶 (on his channel hehe)
 OFF
 
 ### Friday 3/13
-TBD
+TBD 🤫
 
 ### Saturday 3/14
 TBD
