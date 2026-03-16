@@ -2,7 +2,7 @@
 WOW KICK STREAM💚
 
 ### Monday 3/16
-STREAM @2PM CST TBA
+KICK STREAM @2PM CST
 
 ### Tuesday 3/17
 PARTY PREP STREAM @ 2PM 🎂
