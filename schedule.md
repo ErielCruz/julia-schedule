@@ -5,7 +5,7 @@ WOW KICK STREAM💚
 STREAM @2PM CST TBA
 
 ### Tuesday 3/17
-STREAM @2PM CST TBA 🎂
+PARTY PREP STREAM @ 2PM 🎂
 
 ### Wednesday 3/18
 ARTHER'S BIRTHDAY STREAM 🐶 (on his channel hehe)
