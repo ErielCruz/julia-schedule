@@ -5,7 +5,7 @@ WOW KICK STREAM💚
 KICK STREAM @2PM CST
 
 ### Tuesday 3/17
-PARTY PREP STREAM @ 2PM 🎂
+RATING THE BEST IRISH BEERS ON 6TH STREET W/ WATER, JAKE, & ARTHER🍀🍺 
 
 ### Wednesday 3/18
 ARTHER'S BIRTHDAY STREAM 🐶 (on his channel hehe)
