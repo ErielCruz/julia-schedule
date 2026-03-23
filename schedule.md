@@ -5,13 +5,10 @@ OFF
 TACTICAL TRAINING ON CYR'S CHANNEL🔫
 
 ### Wednesday 3/25
-STREAM TBA
+STREAM TBA 📸
 
 ### Thursday 3/26
 STREAM TBA 🌙
-
-### Friday 3/27
-STREAM
 
 ### Saturday 3/28
 STREAM
