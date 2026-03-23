@@ -2,13 +2,13 @@
 OFF
 
 ### Tuesday 3/24
-TBD
+TACTICAL GUN SHOOTING ON CYR'S CHANNEL🔫
 
 ### Wednesday 3/25
 STREAM
 
 ### Thursday 3/26
-OFF
+STREAM TBA 🌙
 
 ### Friday 3/27
 STREAM
