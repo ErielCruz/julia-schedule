@@ -1,21 +1,21 @@
-### Thursday 3/19
-OFF
-
-### Friday 3/20
-STREAM
-
-### Saturday 3/21
-MELEE 6 PREFIGHT CONFERENCE 😵
-
-### Sunday 3/22
-MELEE 6 BTS, FIGHTS, & COMMENTARY 🥊
-
 ### Monday 3/23
-TBD
+OFF
 
 ### Tuesday 3/24
 TBD
 
 ### Wednesday 3/25
-TBD
+STREAM
+
+### Thursday 3/26
+OFF
+
+### Friday 3/27
+STREAM
+
+### Saturday 3/28
+STREAM
+
+### Sunday 3/29
+MELEE 6 BTS, FIGHTS, & COMMENTARY 🥊
 
