@@ -2,7 +2,7 @@
 OFF
 
 ### Tuesday 3/24
-TACTICAL TRAINING ON CYR'S CHANNEL🔫
+KICK ALT STREAM 💚
 
 ### Wednesday 3/25
 STREAM TBA 📸
@@ -10,8 +10,11 @@ STREAM TBA 📸
 ### Thursday 3/26
 STREAM TBA 🌙
 
+### Friday 3/27
+TBD
+
 ### Saturday 3/28
-STREAM
+TBD
 
 ### Sunday 3/29
 MELEE 6 BTS, FIGHTS, & COMMENTARY 🥊
