@@ -8,14 +8,14 @@ OFF
 OFF
 
 ### Wednesday 4/1
-TBD
+OFF 
 
 ### Thursday 4/2
-TBD
+MISTERARTHER'S CHANNEL 🐶
 
 ### Friday 4/3
-TBD
+STREAM TBA 🏠
 
 ### Saturday 4/4
-TBD
+MISTERARTHER'S CHANNEL 🐟
 
