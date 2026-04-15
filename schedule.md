@@ -14,7 +14,7 @@ STREAM TBA 😊
 ----
 
 ### Sunday 4/19
-STREAM TBA ⭐
+REN FAIRE W/ ARTHER 🐀
 
 ### Monday 4/20
 ----
