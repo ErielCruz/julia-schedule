@@ -1,9 +1,21 @@
-### Sunday 4/12
-ARTHER'S STREAM 🐶
-
-### Monday 4/13
-OFF
-
 ### Tuesday 4/14
 ARTHER'S STREAM 🐶
+
+### Wednesday 4/15
+THRIFTING FOR TREASURE 💎
+
+### Thursday 4/16
+----
+
+### Friday 4/17
+STREAM TBA 😊
+
+### Saturday 4/18
+----
+
+### Sunday 4/19
+STREAM TBA ⭐
+
+### Monday 4/20
+----
 
