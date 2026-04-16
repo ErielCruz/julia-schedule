@@ -1,9 +1,3 @@
-### Tuesday 4/14
-ARTHER'S STREAM 🐶
-
-### Wednesday 4/15
-THRIFTING FOR TREASURE 💎
-
 ### Thursday 4/16
 ----
 
@@ -18,4 +12,10 @@ REN FAIRE W/ ARTHER 🐀
 
 ### Monday 4/20
 ----
+
+### Tuesday 4/21
+----
+
+### Wednesday 4/22
+STREAM TBA W/ SPECIAL GUEST 📖
 
