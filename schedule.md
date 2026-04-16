@@ -8,10 +8,10 @@ THRIFTING FOR TREASURE 💎
 ----
 
 ### Friday 4/17
-STREAM TBA 😊
+----
 
 ### Saturday 4/18
-----
+MORNING STREAM TBA ☀️
 
 ### Sunday 4/19
 REN FAIRE W/ ARTHER 🐀
