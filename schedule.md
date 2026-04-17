@@ -11,7 +11,7 @@ REN FAIRE W/ ARTHER 🐀
 OFF
 
 ### Monday 4/20
-----
+KITCHEN STREAM TBA 🍳
 
 ### Tuesday 4/21
 ----
