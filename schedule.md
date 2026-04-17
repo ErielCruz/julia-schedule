@@ -1,9 +1,3 @@
-### Thursday 4/16
-----
-
-### Friday 4/17
-OFF
-
 ### Saturday 4/18
 REN FAIRE W/ ARTHER 🐀
 
@@ -18,4 +12,10 @@ KITCHEN STREAM TBA 🍳
 
 ### Wednesday 4/22
 STREAM TBA W/ SPECIAL GUEST 📖
+
+### Thursday 4/23
+----
+
+### Friday 4/24
+GROWING OLD W/ ARTHER 👴🏻👵🏻
 
