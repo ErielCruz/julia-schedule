@@ -2,13 +2,13 @@
 ----
 
 ### Friday 4/17
-----
+STREAM TBA
 
 ### Saturday 4/18
-MORNING STREAM TBA ☀️
+REN FAIRE W/ ARTHER 🐀
 
 ### Sunday 4/19
-REN FAIRE W/ ARTHER 🐀
+STREAM TBA 
 
 ### Monday 4/20
 ----
