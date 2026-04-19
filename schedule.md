@@ -1,11 +1,8 @@
-### Saturday 4/18
-REN FAIRE W/ ARTHER 🐀
-
 ### Sunday 4/19
 OFF
 
 ### Monday 4/20
-KITCHEN STREAM TBA 🍳
+MUNCHIE MONDAY 🍕 TASTING WEIRD FOOD COMBINATIONS
 
 ### Tuesday 4/21
 ----
@@ -18,4 +15,7 @@ STREAM TBA W/ SPECIAL GUEST 📖
 
 ### Friday 4/24
 GROWING OLD W/ ARTHER 👴🏻👵🏻
+
+### Saturday 4/25
+----
 
