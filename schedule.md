@@ -1,21 +1,21 @@
-### Sunday 4/19
-OFF
+### Saturday 5/2
+STREAM TBA
 
-### Monday 4/20
-MUNCHIE MONDAY 🍕 TASTING STREAMER'S WEIRD FOOD COMBINATIONS W/ SPECIAL GUEST🍕
-
-### Tuesday 4/21
+### Sunday 5/3
 ----
 
-### Wednesday 4/22
-STREAM TBA W/ SPECIAL GUEST 📖
+### Monday 5/4
+STREAM TBA 🏠
 
-### Thursday 4/23
+### Tuesday 5/5
 ----
 
-### Friday 4/24
-GROWING OLD W/ ARTHER 👴🏻👵🏻
+### Wednesday 5/6
+MORNING STREAM TBA 🍣🥢
 
-### Saturday 4/25
+### Thursday 5/7
 ----
+
+### Friday 5/8
+NTE PRISON BREAK ⛓️‍👮‍♂️
 
