@@ -1,21 +1,21 @@
-### Saturday 5/2
-STREAM TBA
-
-### Sunday 5/3
+### Tuesday 5/12
 ----
 
-### Monday 5/4
-STREAM TBA 🏠
+### Wednesday 5/13
+FIRST STREAM BACK ⭐
 
-### Tuesday 5/5
+### Thursday 5/14
 ----
 
-### Wednesday 5/6
-MORNING STREAM TBA 🍣🥢
+### Friday 5/15
+STREAM
 
-### Thursday 5/7
+### Saturday 5/16
 ----
 
-### Friday 5/8
-NTE PRISON BREAK ⛓️‍👮‍♂️
+### Sunday 5/17
+----
+
+### Monday 5/18
+MORNING STREAM W/ SPECIAL GUEST 🥞
 
