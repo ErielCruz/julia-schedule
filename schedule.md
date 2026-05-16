@@ -1,15 +1,3 @@
-### Tuesday 5/12
-----
-
-### Wednesday 5/13
-FIRST STREAM BACK ⭐
-
-### Thursday 5/14
-----
-
-### Friday 5/15
-STREAM
-
 ### Saturday 5/16
 ----
 
@@ -17,5 +5,17 @@ STREAM
 ----
 
 ### Monday 5/18
-MORNING STREAM W/ SPECIAL GUEST 🥞
+HOT CAKES & HOT TAKES W/ ARTHER + DEAN🥞
+
+### Tuesday 5/19
+MISTERARTHERS STREAM 🖍️🍎
+
+### Wednesday 5/20
+STREAM TBA 
+
+### Thursday 5/21
+----
+
+### Friday 5/22
+STREAM TBA 
 
